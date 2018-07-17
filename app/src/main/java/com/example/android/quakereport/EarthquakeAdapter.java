@@ -67,9 +67,10 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Find the TextView with view ID date
         TextView dateView = (TextView) listItemView.findViewById(R.id.date);
         // Grab the date for the Earthquake class
-        String dateEarthquake = currentEarthquake.getTimeInfakeFormat();
+        long dateEarthquake = currentEarthquake.getTimeInMilimeters();
+        String dateInString = Long.toString(dateEarthquake);
         // Display the date of the event in that TextView
-        dateView.setText(dateEarthquake);
+        dateView.setText(dateInString);
 
         // Return the list item view that is now showing the appropriate data
         return listItemView;
