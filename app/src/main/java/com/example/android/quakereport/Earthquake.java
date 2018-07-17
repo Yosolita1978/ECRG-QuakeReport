@@ -12,7 +12,7 @@ public class Earthquake {
     private String mLocation;
 
     /** Time of the earthquake */
-    private long mTimeInMilimeters;
+    private long mTimeInMilliseconds;
 
     /** url of the earthquake */
     private String mUrlEarthquake;
@@ -23,15 +23,15 @@ public class Earthquake {
      *
      * @param magnitude is the magnitude (size) of the earthquake
      * @param location is the location where the earthquake happened
-     * @param timeInMilimeters is the time and date of the fake Earthquake when the
+     * @param timeInMilliseconds is the time and date of the fake Earthquake when the
      *                           earthquake happened
      * @param urlEarthquake is the url where the earthquake happened
      */
 
-    public Earthquake(String location, double magnitude,  long timeInMilimeters, String urlEarthquake) {
+    public Earthquake(String location, double magnitude,  long timeInMilliseconds, String urlEarthquake) {
         mMagnitude = magnitude;
         mLocation = location;
-        mTimeInMilimeters = timeInMilimeters;
+        mTimeInMilliseconds = timeInMilliseconds;
         mUrlEarthquake = urlEarthquake;
     }
 
@@ -52,8 +52,8 @@ public class Earthquake {
     /**
      * Returns the time of the earthquake.
      */
-    public long getTimeInMilimeters() {
-        return mTimeInMilimeters;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
     /**
